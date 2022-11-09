@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.2%;
+    width: 100%;
+    height: 100vh;
+    background-color: #110e0e;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+
+/* CONTENT STYLES */
+main {
+    width: 100%;
+}
+
+form {
+    width: 320px;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    border-radius: 6px;
+    box-shadow: 1px 1px 23px 3px rgba(113, 84, 241, 0.75);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: .6rem auto;
+    animation: color-rainbow infinite 2.8s;
+}
+
+@keyframes color-rainbow {
+    0% {
+        color: #6f29df;
+    }
+    20% {
+        color: #cf2cba;
+    }
+    50% {
+        color: #40ee88;
+    }
+    100% {
+        color: #6f29df;
+    }
+}
+
+input {
+    margin: 1rem 0;
+    height: 40px;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 6px;
+    border: 2px solid rgba(113, 84, 241, 0.75);
+    outline: none;
+}
+input::placeholder {
+    font-weight: bold;
+    color: #504848cc;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+}
+
+button {
+    margin: 1rem;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(113, 84, 241, 0.75);
+    outline: none;
+    background-color: rgba(113, 84, 241, 0.75);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(156, 137, 243, 0.75);;
+}
